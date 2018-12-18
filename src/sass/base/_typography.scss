@@ -1,8 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:300,400|Quicksand:300,400,700');
+@import url('https://use.fontawesome.com/releases/v5.6.1/css/all.css');
 
 body {
-  font-family: sans-serif;
-  line-height: 1.7;
-  font-weight: 400;
-  color: rgb(0, 0, 0);
+  font-family: Quicksand, sans-serif;
+  color: rgb(255, 255, 255);
 }
+
+.primary {
+  font-size: 72px;
+  line-height: 66px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+
+.secondary {
+  font-size: 48px;
+  line-height: 66px;
+  font-weight: 700;
+}
+
+.tertiary {
+  font-size: 30px;
+  line-height: 22px;
+  font-weight: 300;
+}
+

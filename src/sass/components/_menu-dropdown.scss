@@ -1,0 +1,44 @@
+.menu-dropdown {
+  grid-column: 7 / -1;
+  align-self: center;
+  padding: 3.3rem 0 3.3rem 3rem;
+  position: relative;
+  background: rgb(0, 0, 0);
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition-delay: .1s;
+  transition: opacity .3s;
+
+  &__item {
+    padding: .5rem 0;
+  }
+
+  &:hover &__list {
+    visibility: visible;
+    opacity: 1;
+  }
+  &__list {
+    position: absolute;
+    transition-duration: 0.5s;
+    opacity: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    padding: 3.3rem 0 3.3rem 3rem;
+    list-style: none;
+  }
+
+  &__link {
+    color: #ffffff;
+    transition: .3s;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      font-weight: bold;
+      border-bottom: 1px solid #fff;
+      padding-left: 1rem;
+    }
+  }
+}

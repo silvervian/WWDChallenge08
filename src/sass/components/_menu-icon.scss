@@ -1,0 +1,13 @@
+.menu-icon {
+  grid-column: 5 / span 2;
+  justify-self: end;
+  align-self: center;
+  display: flex;
+  width: 20rem;
+  justify-content: space-around;
+
+  &__item {
+    color: #000;
+    font-size: 2.5rem;
+  }
+}

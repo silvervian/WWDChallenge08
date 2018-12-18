@@ -1,0 +1,51 @@
+.graph {
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__circle {
+    display: flex;
+    height: 22rem;
+    width: 22rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50% 50%;
+    border: 2px solid #e5e3e3;
+  }
+
+  &__number {
+    font-family: Quicksand;
+    font-size: 72px;
+    font-weight: 700;
+
+    &--red {
+      color: #f34739;
+    }
+
+    &--green {
+      color: #009989;
+    }
+
+    &--blue {
+      color: #152b3c;
+    }
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #454545;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #454545;
+    max-width: 20rem;
+    text-align: center;
+  }
+}
