@@ -3,6 +3,12 @@
   grid-template-columns: repeat(8, 1fr);
   grid-gap: 1rem;
   align-content: center;
+
+  @include media(small) {
+    position: fixed;
+    background: #fff;
+    z-index: 10;
+  }
 }
 
 .about-us {
@@ -14,5 +20,16 @@
 }
 
 .our-team {
-  
+
+  & + .portfolio {
+    margin-top: 3rem;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 2.5rem 0;
+  font-size: 12px;
+  background-color: #0e0e0d;
+  color: #4a4a4a;
 }

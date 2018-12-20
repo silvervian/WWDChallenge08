@@ -4,6 +4,10 @@
   height: 30rem;
   display: flex;
 
+  @include media(small) {
+    flex-direction: column;
+  }
+
   &:first {
     margin-top: 4rem;
   }
@@ -15,6 +19,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include media(small) {
+      width: 100%;
+      margin: 3rem 0;
+    }
   }
   
   &__name {
@@ -52,6 +61,10 @@
     height: 30rem;
     clip-path: polygon(100% 0px, 100% 40%, 95% 50%, 100% 60%, 100% 100%, 0px 100%, 0px 0px);
 
+    @include media(small) {
+      width: 100%;
+    }
+
     &--reverse {
       clip-path: polygon(5% 50%, 0% 40%, 0% 0%, 100% 0%, 100% 100%, 0px 100%, 0% 60.00%);
     }
@@ -84,6 +97,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include media(small) {
+      border: none;
+    }
   }
   
   &--img {
@@ -91,11 +108,19 @@
     height: 260px;
     border-right: none;
     border: 3px solid #ffffff;
+
+    @include media(small) {
+      border: none;
+    }
   }
 
   &--left {
     align-self: flex-end;
     border-right: none;
+
+    @include media(small) {
+      align-self: center;
+    }
   }
 
   &--right {

@@ -1,0 +1,125 @@
+.porfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23.3rem, 1fr));
+  grid-auto-rows: 23.3rem;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%);
+    opacity: .6;
+    transition: .3s;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover .porfolio-gallery__icon {
+      opacity: 1;
+    }
+
+    &:hover .porfolio-gallery__text {
+      opacity: 1;
+    }
+
+    &:hover, &__icon:hover {
+      filter: grayscale(0);
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    &--1 {
+      background: url(../../img/portolio-img-1.jpg) no-repeat 50% 50% / cover;
+    }
+    &--2 {
+      background: url(../../img/portolio-img-2.jpg) no-repeat 50% 50% / cover;
+    }
+    &--3 {
+      background: url(../../img/portolio-img-3.jpg) no-repeat 50% 50% / cover;
+    }
+    &--4 {
+      background: url(../../img/portolio-img-4.jpg) no-repeat 50% 50% / cover;
+    }
+    &--5 {
+      background: url(../../img/portolio-img-5.jpg) no-repeat 50% 50% / cover;
+    }
+    &--6 {
+      background: url(../../img/portolio-img-6.jpg) no-repeat 50% 50% / cover;
+    }
+    &--7 {
+      background: url(../../img/portolio-img-7.jpg) no-repeat 50% 50% / cover;
+    }
+    &--8 {
+      background: url(../../img/portolio-img-8.jpg) no-repeat 50% 50% / cover;
+    }
+    &--9 {
+      background: url(../../img/portolio-img-9.jpg) no-repeat 50% 50% / cover;
+    }
+    &--10 {
+      background: url(../../img/portolio-img-10.jpg) no-repeat 50% 50% / cover;
+    }
+    &--11 {
+      background: url(../../img/portolio-img-11.jpg) no-repeat 50% 50% / cover;
+    }
+    &--12 {
+      background: url(../../img/portolio-img-12.jpg) no-repeat 50% 50% / cover;
+    }
+    &--13 {
+      background: url(../../img/portolio-img-13.jpg) no-repeat 50% 50% / cover;
+    }
+    &--14 {
+      background: url(../../img/portolio-img-14.jpg) no-repeat 50% 50% / cover;
+    }
+    &--15 {
+      background: url(../../img/portolio-img-15.jpg) no-repeat 50% 50% / cover;
+    }
+    &--16 {
+      background: url(../../img/portolio-img-16.jpg) no-repeat 50% 50% / cover;
+    }
+    &--17 {
+      background: url(../../img/portolio-img-17.jpg) no-repeat 50% 50% / cover;
+    }
+    &--18 {
+      background: url(../../img/portolio-img-18.jpg) no-repeat 50% 50% / cover;
+    }
+    &--19 {
+      background: url(../../img/portolio-img-19.jpg) no-repeat 50% 50% / cover;
+    }
+    &--20 {
+      background: url(../../img/portolio-img-20.jpg) no-repeat 50% 50% / cover;
+    }
+    &--21 {
+      background: url(../../img/portolio-img-21.jpg) no-repeat 50% 50% / cover;
+    }
+  }
+
+  &__icon {
+    width: 50px; 
+    height: 50px;
+    margin: .5em;
+    opacity: 0;
+    transition: .3s;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    transition: .3s;
+  }
+
+  &__img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: .6;
+    transition: .3s;
+    filter: grayscale(100%);
+
+    &:hover {
+      opacity: 1;
+      filter: grayscale(0);
+    }
+  } 
+}

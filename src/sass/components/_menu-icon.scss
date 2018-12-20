@@ -6,6 +6,10 @@
   width: 20rem;
   justify-content: space-around;
 
+  @include media(small) {
+    display: none;
+  }
+
   &__item {
     color: #000;
     font-size: 2.5rem;

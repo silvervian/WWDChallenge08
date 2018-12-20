@@ -7,10 +7,16 @@
   align-items: center;
   height: 70vh;
 
+  @include media(small) {
+    // padding-top: 6rem;
+    height: 90vh;
+  }
+
   &__line {
     height: 1px;
-    width: 17rem;
-    flex-basis: 30%;
+    width: 5rem;
+    // flex-basis: 30%;
+    flex-grow: 2;
     background-color: #fff;
     margin: 0 1rem;
     opacity: .6;

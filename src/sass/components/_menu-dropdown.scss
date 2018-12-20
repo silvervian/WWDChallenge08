@@ -11,6 +11,10 @@
   transition-delay: .1s;
   transition: opacity .3s;
 
+  @include media(small) {
+    display: none;
+  }
+
   &__item {
     padding: .5rem 0;
   }
@@ -34,6 +38,11 @@
     color: #ffffff;
     transition: .3s;
     border-bottom: 1px solid transparent;
+
+    &--dark {
+      color: #000;
+      font-size: 2rem;
+    }
 
     &:hover {
       font-weight: bold;

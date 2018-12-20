@@ -5,6 +5,7 @@
   align-items: center;
 
   &__circle {
+    position: absolute;
     display: flex;
     height: 22rem;
     width: 22rem;
@@ -17,19 +18,19 @@
 
   &__number {
     font-family: Quicksand;
-    font-size: 72px;
+    font-size: 7.2rem;
     font-weight: 700;
 
     &--red {
-      color: #f34739;
+      color: transparent;
     }
 
     &--green {
-      color: #009989;
+      color: transparent;
     }
 
     &--blue {
-      color: #152b3c;
+      color: transparent;
     }
   }
 
@@ -48,4 +49,25 @@
     max-width: 20rem;
     text-align: center;
   }
+}
+
+#circle1 {
+  margin: 20px;
+  width: 22rem;
+  height: 22rem;
+  position: relative;
+}
+
+#circle2 {
+  margin: 20px;
+  width: 22rem;
+  height: 22rem;
+  position: relative;
+}
+
+#circle3 {
+  margin: 20px;
+  width: 22rem;
+  height: 22rem;
+  position: relative;
 }

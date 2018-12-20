@@ -11,8 +11,23 @@
 
 <body>
 
-    <header class="header">
-        <a class="logo" href="#">DSGN</a>
+    <ul class="menu-mobile">
+        <li class="menu-dropdown__item"><a class="menu-dropdown__link--dark" href="#about-us">ABOUT US</a></li>
+        <li class="menu-dropdown__item"><a class="menu-dropdown__link--dark" href="#our-team">OUR TEAM</a></li>
+        <li class="menu-dropdown__item"><a class="menu-dropdown__link--dark" href="#portfolio">PORTFOLIO</a></li>
+        <li class="menu-dropdown__item"><a class="menu-dropdown__link--dark" href="#brands">BRANDS</a></li>
+        <li class="menu-dropdown__item"><a class="menu-dropdown__link--dark" href="#footer">FOOTER</a></li>
+    </ul>
+
+    <header id="header" class="header">
+        <a class="logo" href="#header">DSGN</a>
+
+        <div class="hamburger">
+            <input class="hamburger__checkbox" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
         <div class="menu-icon">
             <a href="#"><i class="fab fa-facebook-f menu-icon__item menu-icon__item" aria-hidden="true"></i></a>
@@ -40,29 +55,35 @@
             <span class="hero__line"></span> Need our help? <span class="hero__line"></span>
         </div>
         <h1 class="primary">TOP DESIGNERS</h1>
-        <button class="hero__btn">Check US!</button>
+        <a href="#about-us"><button class="hero__btn">Check US!</button></a>
     </div>
 
-    <section class="about-us">
+    <section id="about-us" class="about-us">
 
         <div class="graph">
-            <div class="graph__circle">
-                <span class="graph__number graph__number--red">50</span>
-                <span class="graph__title">Big projects</span>
+            <div id="circle1">
+                <div class="graph__circle">
+                    <span class="graph__number graph__number--red">50</span>
+                    <span class="graph__title">Big projects</span>
+                </div>
             </div>
             <span class="graph__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</span>
         </div>
         <div class="graph">
-            <div class="graph__circle">
-                <span class="graph__number graph__number--green">35</span>
-                <span class="graph__title">Clients</span>
+            <div id="circle2">
+                <div class="graph__circle">
+                    <span class="graph__number graph__number--green">35</span>
+                    <span class="graph__title">Clients</span>
+                </div>
             </div>
             <span class="graph__text">Ipsum dolor sit amet, consectetur adipisicing elit, sed incididunt!</span>
         </div>
         <div class="graph">
-            <div class="graph__circle">
-                <span class="graph__number graph__number--blue">80</span>
-                <span class="graph__title">Months</span>
+            <div id="circle3">
+                <div class="graph__circle">
+                    <span class="graph__number graph__number--blue">80</span>
+                    <span class="graph__title">Months</span>
+                </div>
             </div>
             <span class="graph__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                 ut.</span>
@@ -70,7 +91,7 @@
 
     </section> <!-- /.about-us -->
 
-    <section class="our-team">
+    <section id="our-team" class="our-team">
         <div class="section-header section-header--our-team">
             <div class="section-header__inner">
                 <div class="section-header__desc">
@@ -145,7 +166,7 @@
 
     </section> <!-- /.our-team -->
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="section-header section-header--portfolio">
             <div class="section-header__inner">
                 <div class="section-header__desc">
@@ -157,7 +178,265 @@
             </div>
         </div>
 
+        <div class="porfolio-gallery">
+            <div class="porfolio-gallery__item porfolio-gallery__item--1">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--2">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--3">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--4">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--5">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--6">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--7">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--8">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--9">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--10">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--11">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--12">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--13">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--14">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--15">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--16">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--17">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--18">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--19">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--20">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+            <div class="porfolio-gallery__item porfolio-gallery__item--21">
+                <svg class="porfolio-gallery__icon">
+                    <use xlink:href="./img/sprite.svg#icon-eye"></use>
+                </svg>
+                <span class="porfolio-gallery__text">Our new project!</span>
+            </div>
+        </div>
+
     </section> <!-- /.portfolio -->
+
+    <section id="brands" class="brands">
+        <div class="section-header section-header--brands">
+            <div class="section-header__inner">
+                <div class="section-header__desc">
+                    <span class="section-header__line"></span>
+                    <span class="section-header__text">We working for</span>
+                    <span class="section-header__line"></span>
+                </div>
+                <div class="section-header__title">Brands</div>
+            </div>
+        </div>
+
+        <div class="wrapper-gallery">
+            <div class="brands-gallery">
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-AMD_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-AVG_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-Android_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-Cooler_master_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-Dell_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-EA_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-HF2_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-HP_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-HTML5_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-Insta_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-Intel_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-KFC_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-LG_3x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-Layer_17_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-Layer_18_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-Layer_19_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-NIKE_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-Nivea_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-Shell_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-allegro_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-apple_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-bosh_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-microsoft_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-playstation_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-teamspeak_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-ubuntu_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-ups_2x"></i>
+                </div>
+                <div class="brands-gallery__item">
+                    <i class="sprite sprite-vw_2x"></i>
+                </div>
+            </div>
+        </div>
+
+    </section> <!-- /.brands -->
+
+    <section id="footer" class="desc-footer">
+        <div class="desc-footer__container">
+            <span class="desc-footer__title">OUR TEAM</span>
+            <span class="desc-footer__line"></span>
+            <span class="desc-footer__text">We are the best company in the entire world!</span>
+        </div>
+        <div class="desc-footer__container">
+            <span class="desc-footer__title">ABOUT</span>
+            <span class="desc-footer__line"></span>
+            <span class="desc-footer__text">We are the best company in the entire world!</span>
+        </div>
+        <div class="desc-footer__container">
+            <span class="desc-footer__title">CONTACT</span>
+            <span class="desc-footer__line"></span>
+            <span class="desc-footer__text">free@template.com
+                www.freetemplamte.com
+                tel. +48 123 456 79</span>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__text">
+            Copyright 2018 ® Adrian Jedrczak
+        </div>
+    </footer>
 
 
 

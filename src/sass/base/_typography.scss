@@ -7,11 +7,15 @@ body {
 }
 
 .primary {
-  font-size: 72px;
-  line-height: 66px;
+  font-size: 7.7rem;
+  line-height: 6.6rem;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
+
+  @include media(small) {
+    font-size: 6rem;
+  }
 }
 
 .secondary {
