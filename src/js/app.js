@@ -20,8 +20,8 @@ let bar1 = new ProgressBar.Circle(circle1, {
   // prevent clipping
   strokeWidth: 4,
   trailWidth: 1,
-  easing: 'easeInOut',
-  duration: 1400,
+  easing: 'easeIn',
+  duration: 1500,
   text: {
     autoStyleContainer: false
   },
@@ -32,8 +32,8 @@ let bar1 = new ProgressBar.Circle(circle1, {
     circle.path.setAttribute('stroke', state.color);
     circle.path.setAttribute('stroke-width', state.width);
 
-    let value = Math.round(circle.value() * 80);
-    if (value === 50) {
+    let value = Math.round((circle.value() * 80).toFixed(0));
+    if (value >= 50) {
       bar1.stop();
       circle.setText('50');
     } else {
@@ -54,8 +54,8 @@ let bar2 = new ProgressBar.Circle(circle2, {
   // prevent clipping
   strokeWidth: 4,
   trailWidth: 1,
-  easing: 'easeInOut',
-  duration: 1400,
+  easing: 'easeIn',
+  duration: 1500,
   text: {
     autoStyleContainer: false
   },
@@ -66,8 +66,8 @@ let bar2 = new ProgressBar.Circle(circle2, {
     circle.path.setAttribute('stroke', state.color);
     circle.path.setAttribute('stroke-width', state.width);
 
-    let value = Math.round(circle.value() * 50);
-    if (value === 35) {
+    let value = Math.round((circle.value() * 50).toFixed(0));
+    if (value >= 35) {
       bar2.stop();
       circle.setText('35');
     } else {
@@ -88,8 +88,8 @@ let bar3 = new ProgressBar.Circle(circle3, {
   // prevent clipping
   strokeWidth: 4,
   trailWidth: 1,
-  easing: 'easeInOut',
-  duration: 1400,
+  easing: 'easeIn',
+  duration: 1500,
   text: {
     autoStyleContainer: false
   },
@@ -100,8 +100,8 @@ let bar3 = new ProgressBar.Circle(circle3, {
     circle.path.setAttribute('stroke', state.color);
     circle.path.setAttribute('stroke-width', state.width);
 
-    let value = Math.round(circle.value() * 100);
-    if (value === 80) {
+    let value = Math.round((circle.value() * 100).toFixed(0));
+    if (value >= 80) {
       bar3.stop();
       circle.setText('80');
     } else {
