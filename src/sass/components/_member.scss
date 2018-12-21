@@ -6,6 +6,7 @@
 
   @include media(small) {
     flex-direction: column;
+    height: auto;
   }
 
   &:first {
@@ -63,10 +64,14 @@
 
     @include media(small) {
       width: 100%;
+      clip-path: none;
     }
 
     &--reverse {
       clip-path: polygon(5% 50%, 0% 40%, 0% 0%, 100% 0%, 100% 100%, 0px 100%, 0% 60.00%);
+      @include media(small) {
+        clip-path: none;
+      }
     }
 
     &--1 {
@@ -89,28 +94,30 @@
 
 .border {
   &--desc {
-    width: 96%;
+    width: 95%;
     height: 260px;
     border: 3px solid #00000b;
-    width: 96%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     @include media(small) {
-      border: none;
+      border: 3px solid #000;
+      width: 93%;
     }
   }
   
   &--img {
-    width: 96%;
+    width: 95%;
     height: 260px;
     border-right: none;
     border: 3px solid #ffffff;
 
     @include media(small) {
-      border: none;
+      border: 3px solid #fff;
+      border-left: 3px solid #fff;
+      width: 93%;
     }
   }
 
@@ -120,15 +127,58 @@
 
     @include media(small) {
       align-self: center;
+      border-right: 3px solid #000;
+      width: 93%;
     }
   }
 
+  &--left-dark {
+    @include media(small) {
+      border-left: 3px solid #000;
+    }
+  }
+
+  &--right-dark {
+    @include media(small) {
+      border-right: 3px solid #000;
+    }
+  }
+
+  
+  &--right-light {
+    @include media(small) {
+      border-right: 3px solid #fff;
+    }
+  }
+  
   &--right {
     border-left: none;
     align-self: flex-start;
+    
+    @include media(small) {
+      align-self: center;
+      border-left: 3px solid #000;
+    }
   }
-
+  
+  &--left-light {
+    @include media(small) {
+      border-left: 3px solid #fff;
+    }
+  }
   &--dark {
     
+  }
+}
+
+.order1 {
+  @include media(small) {
+    order: 1;
+  }
+}
+
+.order2 {
+  @include media(small) {
+    order: 2;
   }
 }
