@@ -32,4 +32,13 @@
   font-size: 12px;
   background-color: #0e0e0d;
   color: #4a4a4a;
+
+  a {
+    color: #4a4a4a;
+    transition: .2s;
+
+    &:hover {
+      color: tint(#4a4a4a, 100%);
+    }
+  }
 }
